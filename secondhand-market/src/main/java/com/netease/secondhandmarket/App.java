@@ -1,4 +1,4 @@
-package com.netease.secondhand_market;
+package com.netease.secondhandmarket;
 
 /**
  * Hello world!

@@ -1,4 +1,4 @@
-package com.netease.secondhand_market;
+package com.netease.secondhandmarket;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
