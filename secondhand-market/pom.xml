@@ -5,7 +5,7 @@
 	<groupId>com.netease</groupId>
 	<artifactId>secondhandmarket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>secondhandmarket</name>
 	<url>http://maven.apache.org</url>
@@ -40,4 +40,24 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<webResources>
+						<resource>
+							<directory>src/main/java</directory>
+							<excludes>
+								<exclude>**/*.jpg</exclude>
+							</excludes>
+							<targetPath>WebContent/WEB-INF</targetPath>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
